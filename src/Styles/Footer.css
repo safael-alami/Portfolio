@@ -1,0 +1,58 @@
+.main_container_footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px; 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black; 
+    color: white;
+    
+    border-top: 1px solid rgba(165, 88, 184, 0.4); 
+    /* Alternative avec box-shadow pour des résultats plus visibles */
+    /* box-shadow: 0 1px 8px rgba(165, 88, 184, 0.4), 0 0.5px 4px rgba(165, 88, 184, 0.3); */
+  }
+  
+  .footer-text {
+    font-family: 'Dancing Script', cursive; /* A signature-style font */
+    font-weight: 400; /* Lighter weight to resemble handwriting */
+    font-size: 12px;
+  
+    text-align: center;
+  }
+  
+  .footer-text i {
+    color: red; /* Couleur du cœur */
+    margin: 0 5px;
+  }
+  
+  @media (max-width: 1024px) {
+    .main_container_footer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 40px; /* Hauteur ajustée pour mieux afficher le texte */
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      background-color: black; /* Fond sombre */
+      color: white;
+      font-family: 'Arial', sans-serif;
+      border-top: 1px solid rgba(165, 88, 184, 0.4); /* Bord supérieur avec effet d'ombre */
+      /* Alternative avec box-shadow pour des résultats plus visibles */
+      /* box-shadow: 0 1px 8px rgba(165, 88, 184, 0.4), 0 0.5px 4px rgba(165, 88, 184, 0.3); */
+    }
+
+    .footer-text {
+      font-size: 10px;
+      font-weight: 600;
+      text-align: center;
+    }
+    
+  }
+  

@@ -1,0 +1,274 @@
+
+.main_container_contact{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box; 
+    background-color: black;
+    color: white;
+    width: 100%; 
+    height: 100%; 
+    
+    
+    
+}
+
+
+
+
+  .staarr {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    overflow: hidden;
+  }
+  
+  .starss {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0; /* Niveau par défaut */
+  }
+  
+  .star1 {
+    position: absolute;
+    background: rgba(165, 88, 184, 10.5);
+    border-radius: 80%;
+    animation: twinkle infinite ease-in-out;
+  }
+  
+  .avant-contact {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    border-radius: 8px;
+    box-shadow: 0 2px 0 rgba(165, 88, 184, 0.4);
+    position: absolute;
+    z-index: 2; /* Masque les étoiles */
+  }
+  
+  .contact {
+    color: white;
+    font-family: "Jersey 15", serif;
+    font-weight: 600;
+    font-size: 50px;
+    padding-top: 80px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    transition: all 0.4s ease;
+    z-index: 1; /* Les étoiles passent derrière */
+    height: 300px;
+    overflow: hidden;
+  }
+
+  .contact::after{
+    position: absolute;
+    top: 0;
+    right: 50%;
+    inset: 0;
+    aspect-ratio: 1 / 1;
+    width: 300px;
+    margin-top: -18%;
+    margin-left: 41%;
+    border-radius: 100px;
+    background-color: rgba(165, 88, 184, 0.4);
+    filter: blur(120px);
+    content: "";
+    transition: all 0.4s ease;
+    z-index: -1000;
+    
+
+}
+  
+  .section_contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-inline: 300px;
+  margin-top: -100px;
+  margin-bottom: 100px;
+  z-index: 1;
+  color: white;
+  background: rgba(50, 50, 50, 0.7); /* Fond gris avec opacité */
+  border-radius: 10px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px); /* Effet de flou */
+  padding: 30px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+  gap: 15px;
+}
+
+.contact-form h1 {
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.form-input,
+.form-textarea {
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  border: 1px solid rgba(165, 88, 184, 0.8);
+}
+
+.form-textarea {
+  height: 100px;
+  resize: none;
+}
+
+.form-button {
+  background: rgba(165, 88, 184, 1);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-inline:100px;
+  margin-top:10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form-button:hover {
+  background: rgba(165, 88, 184, 0.8);
+}
+
+  @keyframes twinkle {
+    0% {
+      opacity: 0.5;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(2);
+    }
+    100% {
+      opacity: 0.5;
+      transform: scale(1);
+    }
+  }
+
+
+  @media (max-width: 1024px) {
+    .main_container_contact{ 
+      display: flex; 
+      flex-direction: column;
+      justify-content: center; 
+      align-items: center; 
+      padding: 0; 
+      margin: 0;
+      box-sizing: border-box; 
+      background-color: black;
+      color: white;
+      width: 100%; 
+      height: 100%; 
+      
+    }
+
+    .contact {
+      color: white;
+      font-family: "Jersey 15", serif;
+      font-weight: 600;
+      font-size: 30px;
+      padding-top: 80px;
+      position: relative;
+      width: 100%;
+      text-align: center;
+      transition: all 0.4s ease;
+      z-index: 1; /* Les étoiles passent derrière */
+      height: 300px;
+      overflow: hidden;
+    }
+
+    .contact::after{
+      position: absolute;
+      top: 0;
+      right: 50%;
+      inset: 0;
+      aspect-ratio: 1 / 1;
+      width: 300px;
+      margin-top: -46%;
+      margin-left: 10%;
+      border-radius: 100px;
+      background-color: rgba(165, 88, 184, 0.4);
+      filter: blur(120px);
+      content: "";
+      transition: all 0.4s ease;
+      z-index: -1000;
+      
+  
+  }
+
+  .section_contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-inline: 15px;
+    margin-top: -100px;
+    margin-bottom: 100px;
+    z-index: 1;
+    color: white;
+    background: rgba(50, 50, 50, 0.7); /* Fond gris avec opacité */
+    border-radius: 10px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px); /* Effet de flou */
+    padding: 20px;
+  }
+
+  .starss {
+   display: none;
+  }
+
+
+  
+.form-button {
+  background: rgba(165, 88, 184, 1);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  margin-inline:0px;
+  margin-top:10px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form-input,
+.form-textarea {
+  background: #333;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 13px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+}
+  
+  
+  

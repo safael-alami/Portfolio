@@ -1,0 +1,362 @@
+.main_container_career{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%; 
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box; 
+    background-color: black;
+}
+
+
+/* .same {
+    box-shadow: 0 1px 0 1px #00000005, 0 4px 6px #00000005, inset 0 0 0 6px #111;
+    background: linear-gradient(180deg, rgba(180, 130, 220, 0.3) 0%, rgba(26, 26, 26, 1) 85%); 
+    width: 100%;
+    height: 260px;
+    display: flex;
+    padding: 5px;
+    position: relative;
+    border-radius: 12px;
+    border: 1px solid #333;
+    flex-direction: column;
+    gap: 10px;
+    padding-bottom:100px;
+    
+}
+
+.same:hover {
+    background: linear-gradient(180deg, rgba(180, 130, 220, 0.5) 0%, rgba(51, 51, 51, 1) 75%);
+} */
+
+
+
+ 
+
+
+.container{
+    display:flex;
+    gap:30px;
+    height: 100%;
+    width: 100%;
+    padding-inline: 100px;
+    margin:10px;
+}
+
+.Career {  
+    font-family: "Jersey 15", serif;
+    color: white;
+    font-weight: 600;
+    font-size: 55px;
+    padding-top: 20px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    transition: all 0.4s ease;
+    z-index: 1;
+    height: 150px;
+    overflow: hidden;    
+}
+
+
+
+.avant-career{
+    width: 100%; 
+    height: 50px; 
+    background-color: black; 
+    box-shadow: 0 2px 0 rgba(165, 88, 184, 0.4);
+}
+
+.Career::after{
+    position: absolute;
+    top: 0;
+    right: 50%;
+    inset: 0;
+    aspect-ratio: 1 / 1;
+    width: 300px;
+    margin-top: -18%;
+    margin-left: 41%;
+    border-radius: 100px;
+    background-color: rgba(165, 88, 184, 0.4);
+    filter: blur(120px);
+    content: "";
+    transition: all 0.4s ease;
+    z-index: -1000;
+}
+
+/* .name{
+    color:white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-inline:10px;
+    margin-top: 10px;
+    font-size: 17px;
+    line-height: 1.5;
+    letter-spacing: -0.04em;
+
+}
+
+.desc{
+  font-family: 'Franklin Gothic Book', 'Arial', sans-serif;  
+  font-weight: 500;  
+  font-size: 15.5px;
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+  color: #888;
+  margin: 0;
+  max-width: 50ch;
+  margin-inline:10px;
+  
+ 
+ 
+}
+.same img{
+    height:70px;
+    width: 70px;
+    margin-inline: 20px;
+    margin-top:10px;
+    cursor :pointer;
+
+
+} */
+
+.same {
+    background: black;
+    width: 100%;
+    height: 260px;
+    display: flex;
+     padding-top: 10px; 
+     padding-bottom: 10px; 
+    position: relative;
+    border-radius: 16px; /* Coins plus arrondis pour un style moderne */
+    flex-direction: column;
+    gap: 15px; /* Plus d'espace entre les éléments internes */
+    overflow: hidden; /* Pour empêcher le débordement des éléments */
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(165, 88, 184, 0.2); /* Ombre légère et minimaliste en mauve */
+
+    /* Ajout de la bordure en gradient */
+    border: 4px solid transparent;
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    background-image: 
+        linear-gradient(135deg, #544953, #a799aa), 
+        linear-gradient(120deg, #2b2e4a, #8a2387, #ff5f7e, #a56ee3);
+}
+
+
+
+.same::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.05), transparent 70%);
+    animation: rotateBackground 8s linear infinite;
+    z-index: -1; /* Derrière le contenu */
+    transform: rotate(0deg);
+}
+
+.same:hover {
+    transform: translateY(-10px); /* Légère élévation au survol */
+    /* background: #242424; Changement subtil de fond */
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6), 0 4px 8px rgba(255, 255, 255, 0.1); 
+}
+
+.same:hover::before {
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent 70%); 
+}
+
+.same img {
+    height: 80px; /* Image légèrement agrandie */
+    width: 80px;
+    margin-inline: auto;
+    border-radius: 50%; /* Rendu circulaire des images */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5); /* Ajout d'une ombre subtile */
+}
+
+.same img:hover {
+    transform: scale(1.15); /* Zoom au survol */
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2); /* Ombre accentuée au survol */
+}
+
+.same .name {
+    color: #ffffff; /* Blanc pour contraste */
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.same .desc {
+    color: #cccccc; /* Gris clair pour lisibilité */
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+@keyframes rotateBackground {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 1024px) {
+
+
+    .main_container_career{
+        display: flex; 
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center; 
+        width: 100%; 
+        padding: 0; 
+        margin: 0;
+        box-sizing: border-box; 
+        background-color: black;
+    }
+    
+  
+.container{
+    display:flex;
+    flex-direction: column;
+    gap:20px;
+    height: 100%;
+    width: 100%;
+    padding-inline: 50px;
+    margin:10px;
+}
+
+
+.Career { 
+    color:white; 
+    font-family: "Jersey 15", serif;
+    font-weight: 600;
+    font-size: 30px;
+    padding-top: 20px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    transition: all 0.4s ease;
+    z-index: 1;
+    height: 90px;
+    overflow: hidden;    
+}
+
+
+
+.avant-career{
+    width: 100%; 
+    height: 50px; 
+    background-color: black; 
+    box-shadow: 0 2px 0 rgba(165, 88, 184, 0.4);
+}
+
+.Career::after{
+    position: absolute;
+    top: 0;
+    right: 50%;
+    inset: 0;
+    aspect-ratio: 1 / 1;
+    width: 300px;
+    margin-top: -65%;
+    margin-left: 20%;
+    border-radius: 100px;
+    background-color: rgba(165, 88, 184, 0.4);
+    filter: blur(120px);
+    content: "";
+    transition: all 0.4s ease;
+    z-index: -1000;
+}
+
+
+
+.same {
+    background: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 10px; 
+    position: relative;
+    border-radius: 16px; 
+    flex-direction: column;
+    gap: 15px; 
+    overflow: hidden; 
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(165, 88, 184, 0.2); 
+    border: 4px solid transparent;
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    background-image: 
+        linear-gradient(135deg, #544953, #a799aa), 
+        linear-gradient(120deg, #2b2e4a, #8a2387, #ff5f7e, #a56ee3);
+}
+
+
+
+.same::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.05), transparent 70%);
+    animation: rotateBackground 8s linear infinite;
+    z-index: -1;
+    transform: rotate(0deg);
+}
+
+.same:hover {
+    transform: translateY(-10px); 
+    background: #242424; 
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.6), 0 4px 8px rgba(255, 255, 255, 0.1); 
+}
+
+.same:hover::before {
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1), transparent 70%); 
+}
+
+.same img {
+    height: 60px; 
+    width: 60px;
+    margin-inline: auto;
+    border-radius: 50%; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.5); 
+}
+
+.same img:hover {
+    transform: scale(1.15); 
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.2); 
+}
+
+.same .name {
+    color: #ffffff; 
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.same .desc {
+    color: #cccccc; 
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: justify;
+} 
+  }
+
+
+

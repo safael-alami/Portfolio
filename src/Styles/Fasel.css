@@ -1,0 +1,39 @@
+
+.staarr {
+  position: relative; 
+  width: 100%; 
+  height: 100px; 
+  background-color: black; 
+  overflow: hidden; 
+}
+
+
+.starss {
+  position: absolute; 
+  width: 100%;
+  height: 100%;
+}
+
+
+.star1 {
+  position: absolute; 
+  background: rgba(165, 88, 184, 1); 
+  border-radius: 80%; 
+  animation: twinkle infinite ease-in-out;
+}
+
+
+@keyframes twinkle {
+  0% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(2); 
+  }
+  100% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+}

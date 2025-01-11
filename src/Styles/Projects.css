@@ -1,0 +1,454 @@
+.main_container_projects{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    padding: 0; 
+    margin: 0;
+    box-sizing: border-box; 
+    background-color: black;
+    color: white;
+    
+
+}
+
+.projects {
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    /* font-size: 40px; */
+    padding-top: 10px; 
+    position: relative;
+    width: 100%;
+    /* text-align: center; */
+    transition: all 0.4s ease;
+    z-index: 1;
+    /* height: 150px; */
+    padding-left: 60px;
+    overflow: hidden;
+}
+
+.titre{
+    flex:1;
+    text-align: left;
+    position:relative;
+    top: -90px;
+    font-family: "Jersey 15", serif;
+    font-weight: 600;
+    font-size: 40px;
+    
+    
+    
+}
+
+
+
+
+.avant-projects{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%; 
+    height: 50px; 
+    background-color: black; 
+    border-radius: 8px;
+    box-shadow: 0 2px 0 rgba(165, 88, 184, 0.4);
+            
+
+}
+
+.projects::after{
+    position: absolute;
+    top: 0;
+    right: 50%;
+    inset: 0;
+    aspect-ratio: 1 / 1;
+    width: 300px;
+    margin-top: -20%;
+    /* margin-left: 41%; */
+    border-radius: 100px;
+    background-color: rgba(165, 88, 184, 0.4);
+    filter: blur(100px);
+    content: "";
+    transition: all 0.4s ease;
+    z-index: -1000;
+    
+}
+    
+.exposition{
+        /* border: 1px solid red; */
+        flex:1;
+        display: flex;
+        flex-direction: column;
+        /* border-radius: 10px; */
+        gap:50px;
+        /* margin-right:10px; */
+        margin-top:50px;
+
+}
+
+.exposition_avant{
+
+          /* border: 1px solid red; */
+          flex:1;
+          display: flex;
+          flex-direction: column;
+          /* border-radius: 10px; */
+          /* gap:50px; */
+          /* margin-right:10px; */
+          margin-top:-300px;
+          
+
+}
+
+
+.exposition_avant .project1{
+  /* padding-top: 100px; */
+  margin-top: 50px;
+
+
+}
+
+.project1{
+    display:flex;
+    flex-direction: column;
+    transition: transform 0.3s ease;
+    background-color: black;
+    border: 1px solid #2c3437;
+    width: 70%;
+    border-radius: 5px;
+    /* margin:0; */
+    padding: 0;
+   
+   
+
+}
+
+.image_projet{
+    /* flex:1; */
+    height:250px;
+    width:100%;
+    border-radius: 5px;
+   
+    /* opacity:0; */
+   
+}
+
+.titlecard{
+  font-family: "Jersey 15", serif;
+  font-weight: 600;
+  font-size: 32px;
+  margin: 20px;
+
+}
+
+
+  .tools{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0px, auto)); /* Ajuste la largeur des colonnes automatiquement */
+    gap: 10px; 
+    justify-content: start; /* Aligne les badges à gauche */
+    align-items: center; /* Aligne verticalement si nécessaire */
+    padding-inline: 5px;
+    margin-left:30px;
+}
+
+.badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px; /* Espace entre l'image et le texte */
+    height: 25px;
+    padding: 7px;
+    border-radius: 7px;
+    cursor:pointer;
+   
+}
+
+.badge img {
+    height: 12px;
+    width: 12px;
+
+}
+
+.badge span {
+    font-size: 10px;
+}
+
+.badge i{
+
+    font-size: 12px; /* Réduisez la taille selon vos besoins */
+
+
+}
+
+
+
+
+
+.badge-green {
+    color: #9AE6B4;
+    background-color: #202C24;
+  }
+  
+  .badge-green i {
+    color: #9AE6B4;
+  }
+  
+
+  .badge-blue {
+    color: #90CDF4;
+    background-color: #1E282E;
+  }
+  
+  .badge-blue i {
+    color: #90CDF4;
+  }
+  
+  .badge-red {
+    color: rgb(252, 53, 53);
+    background-color: rgba(128, 31, 31, 0.3);
+  }
+  
+  .badge-red i {
+    color: rgb(252, 53, 53);
+  }
+
+.badge-lightgreen {
+    color: #61DBFB;  
+    background-color: #3A6B6B;
+}
+
+.badge-lightgreen i {
+    color: #61DBFB;  
+  }
+
+.badge-yellow {
+    color: #FFDD00;  
+    background-color: #7F6A1A; 
+}
+
+.badge-purple {
+    color: #9B59B6; 
+    background-color: #6C3483; 
+}
+
+.badge-orange {
+    color: #FF8C00;  
+    background-color: #D35400; 
+}
+
+
+  .ligne{
+    border: 0.5px solid #2c3437;
+    margin-inline:30px;
+    margin-top:10px;
+  }
+
+  .decription{
+    margin-inline:30px;
+    margin-top:10px;
+    margin-bottom: 10px;
+    text-align: justify;
+    font-size: 14px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    
+    
+    
+  }
+
+  @media (max-width: 1024px)  {
+    .main_container_projects{
+      display: flex; 
+      flex-direction: column;
+      justify-content: center; 
+      align-items: center; 
+      padding: 0; 
+      margin: 0;
+      box-sizing: border-box; 
+      background-color: black;
+      color: white;
+      
+  
+  }
+
+  
+.projects {
+
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-top: 10px; 
+  position: relative;
+  width: 80%;
+  transition: all 0.4s ease;
+  z-index: 1;
+  padding-left: 0px;
+  overflow: hidden;
+}
+
+
+.titre{
+  flex:1;
+  text-align: left;
+  position:relative;
+  top: 10px;
+  /* left: -20px; */
+  font-family: "Jersey 15", serif;
+  font-weight: 600;
+  font-size: 30px;
+  
+  
+  
+}
+
+   
+.exposition{
+  /* border: 1px solid red; */
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  /* border-radius: 10px; */
+  gap:50px;
+  /* margin-right:10px; */
+  /* margin-top:50px; */
+
+}
+
+.exposition_avant{
+
+    /* border: 1px solid red; */
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    /* border-radius: 10px; */
+    /* gap:50px; */
+    /* margin-right:10px; */
+    margin-top:0px;
+    
+
+}
+
+.projects::after{
+  position: absolute;
+  top: 0;
+  right: 50%;
+  inset: 0;
+  aspect-ratio: 1 / 1;
+  width: 300px;
+  margin-top: -100%;
+  /* margin-left: -100%; */
+  border-radius: 100px;
+  background-color: rgba(165, 88, 184, 0.4);
+  filter: blur(100px);
+  content: "";
+  transition: all 0.4s ease;
+  z-index: -1000;
+  
+}
+
+.project1{
+  display:flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+  background-color: black;
+  border: 1px solid #2c3437;
+  width: 100%;
+  border-radius: 5px;
+  /* margin:0; */
+  padding: 0;
+ 
+}
+
+.image_projet{
+  /* flex:1; */
+  height:100%;
+  width:100%;
+  border-radius: 5px;
+ 
+  /* opacity:0; */
+ 
+}
+
+
+.titlecard{
+  font-family: "Jersey 15", serif;
+  font-weight: 600;
+  font-size: 20px;
+  margin: 10px;
+
+}
+
+.tools{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(0px, auto)); /* Ajuste la largeur des colonnes automatiquement */
+  gap: 10px; 
+  justify-content: start; /* Aligne les badges à gauche */
+  align-items: center; /* Aligne verticalement si nécessaire */
+  padding-inline: 5px;
+  margin-left:10px;
+}
+
+
+.ligne{
+  border: 0.5px solid #2c3437;
+  margin-inline:10px;
+  margin-top:10px;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 25px;
+  padding: 3px;
+  border-radius: 7px;
+  cursor:pointer;
+ 
+}
+
+.decription{
+  margin-inline:10px;
+  margin-top:10px;
+  margin-bottom: 10px;
+  text-align: justify;
+  font-size: 10px;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  
+  
+  
+}
+
+
+.badge span {
+  font-size: 7px;
+}
+
+.badge i{
+
+  font-size: 7px; /* Réduisez la taille selon vos besoins */
+
+
+}
+  }
+
+
+
+  
