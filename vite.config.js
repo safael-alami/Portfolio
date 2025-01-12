@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react';
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: '/Portfolio/', // Remplacez 'Portfolio' par le nom de votre repo GitHub
   plugins: [react()],
   css: {
     modules: {
@@ -10,14 +11,14 @@ export default defineConfig({
     },
   },
   build: {
-    // Increase the chunk size warning limit
-    chunkSizeWarningLimit: 1000, // You can adjust this if needed
+    // Augmenter la limite d'avertissement de taille des chunks
+    chunkSizeWarningLimit: 1000, // Ajustez cette valeur si nécessaire
 
-    // Optional: Add manualChunks configuration for custom chunking
+    // Optionnel : Ajouter une configuration de manualChunks pour un découpage personnalisé
     rollupOptions: {
       output: {
         manualChunks: {
-          // Example: Move libraries like 'react', 'react-dom', or others into separate chunks
+          // Exemple : Placer des bibliothèques comme 'react', 'react-dom', ou d'autres dans des chunks séparés
           vendor: ['react', 'react-dom', 'lodash', 'axios'],
         },
       },
