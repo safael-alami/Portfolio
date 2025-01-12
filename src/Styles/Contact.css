@@ -198,25 +198,12 @@
       text-align: center;
       transition: all 0.4s ease;
       z-index: 1; /* Les étoiles passent derrière */
-      height: 300px;
+      height: 250px;
       overflow: hidden;
     }
 
     .contact::after{
-      position: absolute;
-      top: 0;
-      right: 50%;
-      inset: 0;
-      aspect-ratio: 1 / 1;
-      width: 300px;
-      margin-top: -46%;
-      margin-left: 10%;
-      border-radius: 100px;
-      background-color: rgba(165, 88, 184, 0.4);
-      filter: blur(120px);
-      content: "";
-      transition: all 0.4s ease;
-      z-index: -1000;
+  display: none;
       
   
   }
@@ -238,7 +225,9 @@
   }
 
   .starss {
-   display: none;
+   /* display: none; */
+   height: 100%;
+   width: 100%;
   }
 
 

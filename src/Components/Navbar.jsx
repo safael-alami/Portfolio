@@ -52,9 +52,9 @@ function Navbar() {
         </div>
       </div>
 
-      {/* <div className="menu-toggle" onClick={toggleMenu}>
+      <div className="menu-toggle" onClick={toggleMenu}>
         <i className="fas fa-bars"></i>
-      </div> */}
+      </div>
     </div>
   );
 }

@@ -8,7 +8,9 @@ import linkedin from "../Assets/Images/logo-linkedin.png";
 import email from "../Assets/Images/email.png";
 import appel from "../Assets/Images/appel.png";
 import github from "../Assets/Images/git-logo.png";
+import github_mauve from "../Assets/Images/github mauve.png";
 import medium from "../Assets/Images/Medium-logo.png";
+import medium_mauve from "../Assets/Images/medium mauve.png";
 
 
 function Hero() {
@@ -118,12 +120,12 @@ const handleDownload = (languageChoice) => {
               <a href="tel:+0033765227763">Phone</a>
             </div>
             <div className="gitt">
-            <img  src={github} alt="GitHub" />
+            <img  src={github_mauve} alt="GitHub" />
               <a href="https://github.com/safa-el-alami" target="_blank" rel="noreferrer"> Git</a>
             </div>
 
             <div className="gitt">
-            <img  src={medium} alt="Medium" />
+            <img  src={medium_mauve} alt="Medium" />
             <a href="https://medium.com/@safa-el-alami" target="_blank" rel="noreferrer"> Medium</a>
             </div>
           </div>

@@ -343,20 +343,7 @@
 }
 
 .projects::after{
-  position: absolute;
-  top: 0;
-  right: 50%;
-  inset: 0;
-  aspect-ratio: 1 / 1;
-  width: 300px;
-  margin-top: -100%;
-  /* margin-left: -100%; */
-  border-radius: 100px;
-  background-color: rgba(165, 88, 184, 0.4);
-  filter: blur(100px);
-  content: "";
-  transition: all 0.4s ease;
-  z-index: -1000;
+  display: none;
   
 }
 

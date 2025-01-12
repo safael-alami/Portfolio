@@ -253,7 +253,9 @@
   transition: all 0.4s ease;
   z-index:1;
 }
-
+.about .title::after {
+  display: none;
+}
 
 
 
@@ -265,7 +267,7 @@
   justify-content: center;
   position: relative;
   z-index: 1;
-  border-radius: 50%;  /* Rayon de bordure arrondi pour un cercle */
+  border-radius: 50%;  
   transition: box-shadow 0.3s ease;
   border-width: 1px;
   border-style: solid;
