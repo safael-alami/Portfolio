@@ -5,7 +5,6 @@ import Navbar from "./Components/Navbar";
 import style from "./App.module.css" ;
 import About from "./Components/About";
 import Career from "./Components/Career";
-import Fasel from "./Components/fasel";
 import Experience from "./Components/Experience";
 import Skills from"./Components/Skills";
 import Projects from "./Components/Projects";
