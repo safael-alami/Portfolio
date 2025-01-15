@@ -71,7 +71,7 @@ function Skills() {
     ];
 
     return (
-        <div id="Skills" className="main_Container">
+        <div id="Skills" className="main_Container_skills">
             <div className="avant-skills"></div>
             <div className=" box Skill">Skills</div>
             <section className="box selection">

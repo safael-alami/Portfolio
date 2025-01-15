@@ -55,8 +55,8 @@ const handleDownload = (languageChoice) => {
  
   const fileName = languageChoice === 'fr' ? 'Safa EL-ALAMI cv.pdf' : 'Safa EL-ALAMI Resume.pdf';
   const filePath = languageChoice === 'fr' 
-  ? "/public/cv/safa EL-ALAMI cv.pdf"
-  : "/public/cv/safa EL-ALAMI Resume.pdf"; 
+  ? "/Portfolio/public/cv/safa EL-ALAMI cv.pdf"
+  : "/Portfolio/public/cv/safa EL-ALAMI Resume.pdf"; 
   const link = document.createElement('a');
   link.href = filePath;
   link.download = fileName;
@@ -84,8 +84,8 @@ const handleDownload = (languageChoice) => {
           </div>
 
           
-          <div className="cv">
-            <div className="download" onClick={() => setShowModal(true)}>Download Resume (CV)</div>
+          <div className="cv" onClick={() => setShowModal(true)}>
+            <div className="download" >Download Resume (CV)</div>
             <img src={telecharger} alt="Download CV" />
           </div>
 

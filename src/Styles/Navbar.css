@@ -38,7 +38,7 @@
     justify-content: space-around;
     align-items: center;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-right:300px;
+    /* margin-right:300px; */
     cursor:pointer;
     gap:20px;
    
@@ -101,10 +101,11 @@
 
 
 .logo_container {
-    flex:1;
-    /* margin-right: 100px; */
+    flex: 1;
     display: flex;
     gap: 30px;
+    flex-direction: row-reverse; /* Inverse la direction des éléments */
+    margin-right: 40px;
 }
 
 
