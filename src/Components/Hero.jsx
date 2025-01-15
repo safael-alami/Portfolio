@@ -56,8 +56,8 @@ const handleDownload = (languageChoice) => {
  
   const fileName = languageChoice === 'fr' ? 'Safa EL-ALAMI cv.pdf' : 'Safa EL-ALAMI Resume.pdf';
   const filePath = languageChoice === 'fr' 
-  ? '/portfolio/cv/safa%20EL-ALAMI%20cv.pdf'  // Ajoutez "/portfolio"
-  : '/portfolio/cv/safa%20EL-ALAMI%20Resume.pdf'; // Ajoutez "/portfolio"
+  ? '/portfolio/Images/safa%20EL-ALAMI%20cv.pdf'  // Ajoutez "/portfolio"
+  : '/portfolio/Images/safa%20EL-ALAMI%20Resume.pdf'; // Ajoutez "/portfolio"
   const link = document.createElement('a');
   link.href = filePath;
   link.download = fileName;
