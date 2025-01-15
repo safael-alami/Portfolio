@@ -55,8 +55,8 @@ const handleDownload = (languageChoice) => {
  
   const fileName = languageChoice === 'fr' ? 'Safa EL-ALAMI cv.pdf' : 'Safa EL-ALAMI Resume.pdf';
   const filePath = languageChoice === 'fr' 
-  ? "/Portfolio/public/cv/Safa EL-ALAMI cv.pdf"
-  : "/Portfolio/public/cv/Safa EL-ALAMI Resume.pdf"; 
+  ? '/Portfolio/cv/Safa%20EL-ALAMI%20cv.pdf'
+  : '/Portfolio/cv/Safa%20EL-ALAMI%20Resume.pdf';
   const link = document.createElement('a');
   link.href = filePath;
   link.download = fileName;
