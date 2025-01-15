@@ -11,6 +11,8 @@ import github from "../Assets/Images/git-logo.png";
 import github_mauve from "../Assets/Images/github mauve.png";
 import medium from "../Assets/Images/Medium-logo.png";
 import medium_mauve from "../Assets/Images/medium mauve.png";
+import cv_fr from "../Assets/cv/safa EL-ALAMI cv.pdf";
+import cv_eng from "../Assets/cv/safa EL-ALAMI Resume.pdf";
 
 
 function Hero() {
@@ -55,8 +57,8 @@ const handleDownload = (languageChoice) => {
  
   const fileName = languageChoice === 'fr' ? 'Safa EL-ALAMI cv.pdf' : 'Safa EL-ALAMI Resume.pdf';
   const filePath = languageChoice === 'fr' 
-  ? "Portfolio/tree/gh-pages/cv/safa EL-ALAMI cv.pdf"
-  : "Portfolio/tree/gh-pages/cvcv/safa EL-ALAMI Resume.pdf"; 
+  ? {cv_fr}
+  : {cv_eng}; 
   const link = document.createElement('a');
   link.href = filePath;
   link.download = fileName;
