@@ -13,7 +13,6 @@ import medium from "../Assets/Images/Medium-logo.png";
 import medium_mauve from "../Assets/Images/medium mauve.png";
 
 
-
 function Hero() {
   const [showDeveloper, setShowDeveloper] = useState(false);
   const [language, setLanguage] = useState('fr'); // 'fr' for French and 'en' for English
@@ -56,8 +55,8 @@ const handleDownload = (languageChoice) => {
  
   const fileName = languageChoice === 'fr' ? 'Safa EL-ALAMI cv.pdf' : 'Safa EL-ALAMI Resume.pdf';
   const filePath = languageChoice === 'fr' 
-  ? '/portfolio/Images/safa%20EL-ALAMI%20cv.pdf'  // Ajoutez "/portfolio"
-  : '/portfolio/Images/safa%20EL-ALAMI%20Resume.pdf'; // Ajoutez "/portfolio"
+  ? "/Portfolio/public/cv/Safa EL-ALAMI cv.pdf"
+  : "/Portfolio/public/cv/Safa EL-ALAMI Resume.pdf"; 
   const link = document.createElement('a');
   link.href = filePath;
   link.download = fileName;
